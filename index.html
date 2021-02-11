@@ -28,9 +28,9 @@
 			<article>
 				<form>
 					<fieldset>
-						<legened>Part 1 (of 3): Patient Information</legened>
+						<legend>Part 1 (of 3): Patient Information</legend>
 						<p>
-							<label = "txtFirstname">
+							<label for = "txtFirstname">
 								<span>First Name: </span>
 								<strong><abbr title = "required" >*</abbr></strong>
 							</label>
@@ -38,7 +38,7 @@
 						</p>
 
 						<p>
-							<label = "txtLastname">
+							<label for = "txtLastname">
 								<span>Last Name: </span>
 								<strong><abbr title = "required" >*</abbr></strong>
 							</label>
@@ -53,19 +53,17 @@
 							<input type = "date" id = "txtDoB" name = "txtDoB" required>
 						</p>
 
-						<p>
-							<fieldSet>
-								<legend>Gender: </legend>
-								<input type = "radio" id = "rbMale" name = "gender" value = "male">
-								<label for  = "rbMale">Male</label>
+						<fieldSet>
+							<legend>Gender: </legend>
+							<input type = "radio" id = "rbMale" name = "gender" value = "male">
+							<label for  = "rbMale">Male</label>
 
-								<input type = "radio" id = "rbFemale" name = "gender" value = "female">
-								<label for  = "rbFemale">Female</label>
+							<input type = "radio" id = "rbFemale" name = "gender" value = "female">
+							<label for  = "rbFemale">Female</label>
 
-								<input type = "radio" id = "rbOther" name = "gender" value = "other">
-								<label for  = "rbOther">Other</label>
-							</fieldSet>
-						</p>
+							<input type = "radio" id = "rbOther" name = "gender" value = "other">
+							<label for  = "rbOther">Other</label>
+						</fieldSet>
 
 						<p>
 							<label for = "txtTel">
@@ -257,7 +255,7 @@
 							</select>
 						</p>
 
-						<p>
+						<div>
 							<label for = "ddTraveled">
 								<span>
 									Have you treaveled to a foreign country in the last 14 days?<br>
@@ -282,7 +280,7 @@
 
 							<input type = "text" id = "txtCountry" name = "txtCountry" >
 							</div>
-						</p>
+						</div>
 
 						<p>
 							<label for = "numTemperature" >

@@ -17,20 +17,33 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Covid Center Website</title>
+		<legend class = "w-auto">
+			Covid Center Website
+		</legend>
 	</head>
 
 	<body>
 		<header>
-			<h1>Welcome to the Covid Assessment Help Form</h1>
+			<div class="alert alert-primary">
+				<h1>Welcome to the Covid Assessment Help Form</h1>
+			</div>
 		</header>
 
 		<section>
-			<h2>Please Start by filling out the following form:</h2>
+			<div class="alert alert-primary">
+				<h3>Please Start by filling out the following form:</h3>
+			</div>
 			<h5>(*) denotes a required field</h5>
 			<article>
 				<form>
 					<fieldset class = "border">
-						<legend class = "w-auto">Part 1 (of 3): Patient Information</legend>
+						<!--
+							Dead Code (for reference)
+							<legend class = "w-auto">Part 1 (of 3): Patient Information</legend>
+						-->
+						<div class="alert alert-secondary">
+							<h3>Part 1 (of 3): Patient Information</h3>
+						</div>
 						<div class = "form-group row">
 							<div class = "col-sm-2">
 								<label for = "txtFirstname" class = "col-form-label">
@@ -133,8 +146,11 @@
 					</fieldset>
 
 					<fieldset class="border">
-						<legend class="w-auto">Part 2 (of 3): Potiential Symptoms</legend>
-						<h3>Please Select yes to any symtptoms you have experienced in the past 60 days.</h3>
+						<div class="alert alert-secondary">
+							<h3>Part 2 (of 3): Potiential Symptoms</h3>
+							<h5>Please Select yes to any symtptoms you have experienced in the past 60 days.</h5>
+						</div>
+						
 					
 						<div class="row form-group">
 							<label for="ddFever" class="col-sm-2 col-form-label">
@@ -270,8 +286,10 @@
 					</fieldset>
 
 					<fieldset class = "border">
-						<legend class = "w-auto">Part 3 (of 3): Potential Exposure</legend>
-						<h3>Please Select yes for any situations that apply in the past 90 days.</h3>
+						<div class="alert alert-secondary">
+							<h3>Part 3 (of 3): Potential Exposure</h3>
+							<h5>Please Select yes for any situations that apply in the past 90 days.</h5>
+						</div>
 
 						<div class="row form-group">
 							<label for="ddContact" class="col-sm-6 col-form-label">
